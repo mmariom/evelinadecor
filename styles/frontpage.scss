@@ -1,0 +1,101 @@
+.hero {
+    height: 94vh;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(153, 218, 255, 0.3) 100%
+    );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  .hero-title {
+    margin: 0;
+    font-size: calc(16px + 5vw);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .hero-content {
+    font-size: calc(16px + 1vw);
+    color: #fff;
+  }
+  
+  .container {
+    h3 {
+      font-size: 1rem ;
+      font-style: italic;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+  
+  .foodsection{
+
+   
+  
+      h3{
+          font-size: 2.6rem;
+          font-style: normal;
+      }
+  }
+
+
+  .imgheight{
+        
+    max-height:40vh;
+
+}
+
+.icon{
+  height: 1rem;
+  width: 1rem;
+}
+  
+  @media (min-width: 769px) {
+  
+  
+  .container {
+      h3 {
+        font-size: 1.5rem ;
+        font-style: italic;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  
+  
+    .foodsection{
+       
+     
+  
+        h3{
+            font-size: 2.6rem;
+            font-style: normal;
+        }
+    }
+
+
+    .imgheight{
+        
+            max-height:30vh;
+        
+    }
+
+
+
+  }
+  

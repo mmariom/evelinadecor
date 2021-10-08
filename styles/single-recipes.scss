@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+
+
+.single-text-section{
+    background-color:#F2F1EE;
+    padding-top: 5vh;
+}
+
+
+
+.thelist{
+    
+    list-style-type: none;
+    padding-right: 0vh;
+}
+
+
+.single-gallery-section{
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+
+.galerydivimg1{
+    margin-bottom: 7vh;
+}
+
+
+.galeryimg1{
+    height: 70vh;
+}
+
+.galeryimg2{
+    height: 40vh;
+}
+
+  
+  @media (min-width: 769px) {
+
+
+
+    .thelist{
+        text-align: end;
+        list-style-type: none;
+        padding-right: 2vh;
+    }
+
+    .galerydivimg1{
+        margin-bottom: 0vh;
+    }
+  
+  
+
+    .galeryimg1{
+        height: 50vh;
+    }
+    
+    .galeryimg2{
+        height: 50vh;
+    }
+
+
+
+
+  }
+  
