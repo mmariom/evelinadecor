@@ -14,7 +14,7 @@
 
 
       <!--  MAIN HEADER  -->
-      <header class="head-main" style="margin-top: -3vh;">
+      <header class="head-main">
      
           <div class="navigationmenu">
               <div class="dontshowinmobile"></div>
