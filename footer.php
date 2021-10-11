@@ -9,24 +9,24 @@
                         <ul class="list-unstyled  contactinfo">
                                 <li>
                                     <span>
-                                    Created with ❤️ by
+                                    Created by
                                     </span>
                                 </li>
                                 <li>
                                     <span>
-                                    🇩🇪 Anke
+                                     Anke
                                    
                                     </span>
                                 </li>
                                 <li>
                                     <span>
-                                    🇩🇪 Lisa
+                                     Lisa
                                     
                                     </span>
                                 </li>
                                 <li>
                                     <span>
-                                    🇸🇰 Mario
+                                     Mario
                                 </span>
                                 </li>
                             </ul>

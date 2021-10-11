@@ -20,7 +20,7 @@ if ( have_posts() ) :
 
 
 <main class="single-text-section">
-                <div class="container col-md-8 ">   
+                <div class="container col-md-8" style="padding-bottom:20vh;">   
 
 
       

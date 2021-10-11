@@ -28,6 +28,7 @@
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;
+  padding-top: 35vh;
 }
 
 .hero-content {
@@ -56,6 +57,11 @@
 .icon {
   height: 1rem;
   width: 1rem;
+}
+
+#hyperlinkremove {
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 769px) {
