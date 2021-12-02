@@ -1,5 +1,5 @@
 .hero {
-  height: 94vh;
+  height: 100%;
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4) 0%, rgba(153, 218, 255, 0.3) 100%);
   background-position: center center;
   background-repeat: no-repeat;
@@ -20,6 +20,7 @@
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
+  border-bottom: solid 6px #daaa94;
 }
 
 .hero-title {
@@ -28,7 +29,7 @@
   letter-spacing: -1px;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 35vh;
+  padding-top: 5vh;
 }
 
 .hero-content {
@@ -37,12 +38,12 @@
 }
 
 .container h3 {
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-style: italic;
 }
 
 .container p {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .foodsection h3 {
@@ -66,11 +67,11 @@
 
 @media (min-width: 769px) {
   .container h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: italic;
   }
   .container p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .foodsection h3 {
     font-size: 2.6rem;

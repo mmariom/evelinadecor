@@ -1,4 +1,22 @@
 <?php
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+	add_filter('woocommerce_reset_variations_link', '__return_empty_string');
+	
+	
+/**
+ * Remove product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+}
+
+
 
 function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
@@ -12,8 +30,8 @@ function easv_register_resources() {
     wp_enqueue_style("header", get_stylesheet_directory_uri() . "/styles/header.css"); 
     wp_enqueue_style("frontpage", get_stylesheet_directory_uri() . "/styles/frontpage.css"); 
     wp_enqueue_style("footer", get_stylesheet_directory_uri() . "/styles/footer.css"); 
-    wp_enqueue_style("single_recipes", get_stylesheet_directory_uri() . "/styles/single-recipes.css"); 
-
+	wp_enqueue_style("single_recipes", get_stylesheet_directory_uri() . "/styles/single-products.css"); 
+	wp_enqueue_style("checkout", get_stylesheet_directory_uri() . "/styles/checkout.css"); 
     wp_enqueue_script("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js");
             /* Updated bootstrap and ajax  */
     wp_enqueue_script("bootstrap4css", "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
@@ -75,12 +93,12 @@ function cptui_register_my_cpts_recipes() {
 	 */
 
 	$labels = [
-		"name" => __( "recipe", "custom-post-type-ui" ),
-		"singular_name" => __( "recipes", "custom-post-type-ui" ),
+		"name" => __( "products", "custom-post-type-ui" ),
+		"singular_name" => __( "product", "custom-post-type-ui" ),
 	];
 
 	$args = [
-		"label" => __( "recipe", "custom-post-type-ui" ),
+		"label" => __( "products", "custom-post-type-ui" ),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
@@ -103,7 +121,7 @@ function cptui_register_my_cpts_recipes() {
 		"show_in_graphql" => false,
 	];
 
-	register_post_type( "recipes", $args );
+	register_post_type( "products", $args );
 }
 
 add_action( 'init', 'cptui_register_my_cpts_recipes' );
@@ -111,7 +129,6 @@ add_action( 'init', 'cptui_register_my_cpts_recipes' );
 
 
 ?>
-
 
 
 

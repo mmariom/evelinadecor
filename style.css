@@ -1,6 +1,6 @@
 /*
- Theme Name:   Cook worldddd
- Author:       Putin
+ Theme Name:   Evelin
+ Author:       Mario Matejovic
 
 */
 @font-face {
@@ -50,8 +50,19 @@ body, html {
   padding-bottom: 20vh;
 }
 
-#categoryfoodname {
-  font-size: 1.2rem;
+.error-site {
+  padding-top: 30vh;
+  padding-bottom: 50vh;
+}
+
+.cart-layout {
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+}
+
+.checkout-layout {
+  padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 .sectioncategory {
@@ -124,12 +135,106 @@ body, html {
   text-decoration: none;
 }
 
+.cart-settings {
+  padding-top: 30%;
+}
+
+button.single_add_to_cart_button.button.alt {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(90deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+  margin-top: 10px;
+}
+
+button.single_add_to_cart_button.button.alt:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(270deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+  margin-top: 10px;
+}
+
+#place_order {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(90deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+}
+
+#place_order:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(270deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+}
+
+.woocommerce a.button.alt {
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(90deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+}
+
+.woocommerce a.button.alt:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(270deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+}
+
+select {
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+  /* get rid of default appearance for IE8, 9 and 10*/
+  appearance: none;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  margin-left: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+  background: linear-gradient(90deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
 @media (min-width: 769px) {
+  .cart-settings {
+    padding-top: 17%;
+  }
   #categoryfoodname {
     font-size: 1.3rem;
   }
   .imgheight-book {
     max-height: 30vh;
+  }
+  .variations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  select {
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    /* get rid of default appearance for IE8, 9 and 10*/
+    appearance: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(69%, #daaa94), color-stop(90%, #e0c9ad));
+    background: linear-gradient(90deg, #020024 0%, #daaa94 69%, #e0c9ad 90%);
+    text-align: center;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

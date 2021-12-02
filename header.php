@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo("name") ?></title>
+    <script src="https://use.fontawesome.com/2302f30595.js"></script>
+    
     <?php wp_head() ?>
 
 
@@ -15,17 +17,18 @@
 
       <!--  MAIN HEADER  -->
       <header class="head-main">
-     
+      <a class="nav-button ml-auto  hamburger"><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
+
           <div class="navigationmenu">
               <div class="dontshowinmobile"></div>
            
 
 
-              <a href="<?php echo get_home_url(); ?>" style="text-align:center">
-                <img class="logopreview" src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="logo"  alt="" srcset="">
+             
+              <a href="<?php echo get_home_url(); ?>" style="text-align:center;  text-decoration: none;">
+              <h1 class="sitename">evelin decor</h1>
 
-              </a>
-              <a class="nav-button ml-auto  hamburger"><span id="nav-icon3"><span></span><span></span><span></span><span></span></span></a>
+             
 
 
         </div>
@@ -60,7 +63,7 @@
                                         ?>
 
 
-              " href="#"></a></li>
+              " ></a></li>
            
 
 
@@ -76,6 +79,39 @@
 
    
       </header>
+
+
+      <div class="desktop-nav">
+      <a href="<?php echo get_home_url(); ?>" style="text-align:center;  text-decoration: none;" >
+              <h1 class="sitename">evelin decor</h1>
+      <nav class="navbar navbar-expand-md navbar-light bg-light desk-menu-hover" role="navigation">
+    
+    
+
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+        <span class="navbar-toggler-icon "></span>
+        
+    </button>
+    
+   
+        <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'alphamenu',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+    
+</nav>
+
+      </div>
 
                        
 

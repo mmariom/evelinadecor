@@ -4,11 +4,19 @@
 
 
 
-
+.single-hero-title {
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 5vh;
+    
+  }
 
 
 .single-text-section{
-    background-color:#F2F1EE;
+ //   background-color:#F2F1EE;
     padding-top: 5vh;
 }
 
@@ -39,15 +47,20 @@
     height: 40vh;
 }
 
+
   
   @media (min-width: 769px) {
 
-
+    .single-hero-title {
+       
+        font-size: calc(12px + 4vw);
+      
+      }
 
     .thelist{
-        text-align: end;
+        
         list-style-type: none;
-        padding-right: 2vh;
+        
     }
 
     .galerydivimg1{
@@ -57,11 +70,18 @@
   
 
     .galeryimg1{
-        height: 50vh;
+        height: 35vh;
     }
     
     .galeryimg2{
-        height: 50vh;
+        height: 45vh;
+    }
+    
+
+    .layoutproductdesktop{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
     }
 
 

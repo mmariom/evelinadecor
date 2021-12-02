@@ -8,10 +8,10 @@ if ( have_posts() ) :
 
 
 
-<div class="hero" style="
+<div class="hero" alt="hero-image" style="
     background-image:url(<?php the_field('header_image')?>);
 ">
-  <h1 class="hero-title"><?php the_field('headet_title')?></h1>
+  <h2 class="hero-title"><?php the_field('headet_title')?></h2>
   <p class="hero-content"><?php the_field('header_desription')?></p>
  
 </div>
@@ -36,14 +36,14 @@ if ( have_posts() ) :
                             </div>
 
 
-                            <div class="row justify-content-center mt-5">
+                            <div class="row justify-content-center mt-5  ">
                                 <div class="col-12 col-md-5">
                                 <?php the_field('homepage_welcome_text_left_artcile')?>
                                 
                                 </div>
 
-                                <div class="col-12 col-md-5">
-                                <?php the_field('homepage_welcome_text_right_artcile')?>
+                                <div class="col-12 col-md-5 d-flex justify-content-center" style="align-items:center;">
+                                <?php the_field('homepage_welcome_text_right_video')?>
                                    
                                 </div>
                             
@@ -71,14 +71,14 @@ if ( have_posts() ) :
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center foodsection">
                                     <div>
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section1_item1_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item1_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item1_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section1_item1_text")?></p>
                                     </a>
                                     </div>
 
                                     <div >
                                     <a id="hyperlinkremove"  href="<?php the_field("frontpage_section1_item2_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item2_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item2_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section1_item2_text")?></p>
                                     </a>
                                     </div>
@@ -86,7 +86,7 @@ if ( have_posts() ) :
 
                                     <div >
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section1_item3_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item3_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section1_item3_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section1_item3_text")?></p>
                                     </a>
                                     </div>
@@ -108,14 +108,14 @@ if ( have_posts() ) :
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center foodsection">
                                     <div>
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section2_item1_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item1_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item1_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section2_item1_text")?></p>
                                     </a>
                                     </div>
 
                                     <div >
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section2_item2_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item2_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item2_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section2_item2_text")?></p>
                                     </a>
                                     </div>
@@ -123,7 +123,7 @@ if ( have_posts() ) :
 
                                     <div >
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section2_item3_link")?>">   
-                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item3_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section2_item3_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section2_item3_text")?></p>
                                     </a>
                                     </div>
@@ -146,14 +146,14 @@ if ( have_posts() ) :
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center foodsection">
                                     <div>
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section3_item1_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item1_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item1_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section3_item1_text")?></p>
                                     </a>   
                                 </div>
 
                                     <div >
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section3_item2_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item2_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item2_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section3_item2_text")?></p>
                                     </a>
                                 </div>
@@ -161,7 +161,7 @@ if ( have_posts() ) :
 
                                     <div >
                                     <a id="hyperlinkremove" href="<?php the_field("frontpage_section3_item3_link")?>">
-                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item3_image")?>" alt="logo" width="100%" height="90%" alt="" srcset="">
+                                    <img class="imgheight" src="<?php the_field("frontpage_section3_item3_image")?>" alt="product" width="100%" height="90%" alt="" srcset="">
                                     <p class="text-center mt-2"><?php the_field("frontpage_section3_item3_text")?></p>
                                     </a>
                                     </div>
@@ -204,8 +204,8 @@ else :
 
 endif;
 
-get_footer();
+
 
 
 ?>
-
+<?php get_footer(); ?>

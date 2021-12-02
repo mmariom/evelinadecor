@@ -2,7 +2,7 @@
 
       <div class="container mt-5">
         <main class="row" id="sector-it">
-
+            category.php
           <div class="container-fluid col-12">
             <div class="row">
            

@@ -1,9 +1,122 @@
-footer {
-  background-color: #3C3C3C;
-  color: white;
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  text-align: center;
 }
 
-footer .contactinfo {
-  padding-top: 2rem;
+.effect .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.effect a {
+  text-decoration: none !important;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 10px;
+}
+
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+
+.effect a.fb {
+  background-color: #3b5998;
+}
+
+.effect a.insta {
+  background-color: #bc2a8d;
+}
+
+.effect a.in {
+  background-color: #007bb6;
+}
+
+/* jaques effect */
+.effect.jaques a {
+  -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.effect.jaques a:hover {
+  border-radius: 50%;
+}
+
+footer {
+  background: #020024;
+  background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(39%, #daaa94), color-stop(76%, #ece0d1));
+  background: linear-gradient(270deg, #020024 0%, #daaa94 39%, #ece0d1 76%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.rouded-top-footer {
+  background-color: white;
+  padding-bottom: 5%;
+  border-radius: 0 0 70% 70%;
+  position: absolute;
+  width: 100%;
+}
+
+.copyright {
+  padding-top: 15px;
+}
+
+@media (min-width: 769px) {
+  footer {
+    background: #020024;
+    background: -webkit-gradient(linear, right top, left top, from(#020024), color-stop(39%, #daaa94), color-stop(76%, #ece0d1));
+    background: linear-gradient(270deg, #020024 0%, #daaa94 39%, #ece0d1 76%);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10% 40% 4% 40%;
+  }
+  .icon-size {
+    height: 30%;
+    width: 30%;
+  }
+  .rouded-top-footer {
+    background-color: white;
+    padding-bottom: 5%;
+    border-radius: 0 0 70% 70%;
+    position: absolute;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
